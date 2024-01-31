@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        
+:root {
+  --primary-color: #f8f208;
+  --primary-color-dark: #192219;
+  --secondary-color: #04091d;
+  --secondary-color-light: #0f1221;
+  --secondary-color-dark: #03060f;
+  --text-light: #e0e4eb;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --gradient: linear-gradient(
+    to right,
+    var(--primary-color-dark),
+    var(--primary-color)
+  );
+}
+.back_img{
+  background-color: rgb(44, 46, 43);
+}
+        .contact__form {
+  max-width: 600px;
+  margin-inline: auto;
+  margin-top: 4rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.contact__form .input__row {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact__form input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--primary-color-dark);
+  border-radius: 5px;
+}
+
+.contact__form input::placeholder {
+  color: var(--text-light);
+}
+
+.contact__form .btn {
+  max-width: fit-content;
+  margin-inline: auto;
+  margin-top: 1rem;
+  
+}
+.section__header{
+    text-align: center;
+}
+.btn:hover{
+    color: #929425;
+    cursor: pointer;
+    
+}
+body{
+            background-image: url(img/15.-Juicy-Grass.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            
+        }
+        .btn{
+          width: 420px;
+        }
+
+
+@media (width > 480px) {
+  
+
+  .contact__form .input__row {
+    flex-direction: row;
+  }
+
+}
+
+
+
+
+    </style>
+    <title>PAY HERE</title>
+</head>
+<body>
+    
+
+
+    <section class="back_img"><br>
+    
+
+        <h2 class="section__header">PAYMENT FORM</h2>
+        <form action="/" class="contact__form">
+         <div class="input__row">
+            <input type="text" placeholder="First Name" >
+            
+          <input type="text" placeholder="Email" required size="40">
+          <input type="text" placeholder="Product Name" size="40">
+
+         </div>
+            <input type="password"  placeholder="Amount" id="password" name="password" required size="40">
+               
+          
+            <input type="text" placeholder="Bank Name" required size="40">
+            <input type="password"  placeholder="Pin Code" id="password" name="password" required size="40">
+        
+          <button class="btn">...... S U B M I T ......</button><br>
+        </form>
+      </section>
+
+
+</body>
+</html>
